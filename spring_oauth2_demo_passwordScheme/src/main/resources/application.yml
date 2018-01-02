@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        test-on-borrow: true
+        validationQuery: SELECT 1
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/springoauth?useUnicode=true&characterEncoding=UTF-8
+        password: 123456
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+            naming_strategy: org.springframework.boot.orm.jpa.hibernate.SpringNamingStrategy
+        properties:
+            hibernate.globally_quoted_identifiers: true
+            hibernate.show_sql: false
+            hibernate.format_sql: true
